@@ -176,3 +176,39 @@ function Home(props) {
 }
 export default Home;
 ```
+# React Portfolio Template
+
+A dynamic personalized portfolio website built using React components and props.
+
+## Running the Project
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
+3. Open the local URL printed by Vite in your browser.
+
+To create a production build, run:
+```bash
+npm run build
+```
+
+## Personalizing the Portfolio
+
+Edit `src/data/user.js` to update the name, city, bio, heading color, and GitHub
+and LinkedIn URLs. The `App` component passes this data to `Home` and `About`;
+`About` passes the profile links to `Links`.
+
+## Component Structure
+
+```text
+App
+├── NavBar
+├── Home
+└── About
+    └── Links
+```

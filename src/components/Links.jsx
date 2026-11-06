@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 // Links component takes github and linkedin props to display anchor tags
 function Links({ github, linkedin }) {
@@ -10,5 +10,10 @@ function Links({ github, linkedin }) {
     </div>
   );
 }
+
+Links.propTypes = {
+  github: PropTypes.string.isRequired,
+  linkedin: PropTypes.string.isRequired,
+};
 
 export default Links;

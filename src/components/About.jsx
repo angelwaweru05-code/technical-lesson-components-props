@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 import Links from "./Links";
 
 // About component handles the user's bio and nests the Links component
@@ -12,5 +12,13 @@ function About({ bio, links }) {
     </div>
   );
 }
+
+About.propTypes = {
+  bio: PropTypes.string.isRequired,
+  links: PropTypes.shape({
+    github: PropTypes.string.isRequired,
+    linkedin: PropTypes.string.isRequired,
+  }).isRequired,
+};
 
 export default About;

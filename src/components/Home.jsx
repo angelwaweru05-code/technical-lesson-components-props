@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 // Home component receives color, name, and city props to dynamically render the header text and style
 function Home({ color, name, city }) {
@@ -10,4 +10,11 @@ function Home({ color, name, city }) {
     </div>
   );
 }
+
+Home.propTypes = {
+  color: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  city: PropTypes.string.isRequired,
+};
+
 export default Home;
